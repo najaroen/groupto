@@ -53,7 +53,8 @@ const readFile = () => {
       listOfDate.push({ day: item, value: _.groupBy(getByDate, "hour")})
   }
 
-  console.log(listOfDate);
+  return listOfDate
 };
 
-readFile();
+const list = readFile();
+console.log(list);
